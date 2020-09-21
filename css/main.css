@@ -1,0 +1,32 @@
+body {
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.page {}
+.page__inner {}
+.page__wrapper {
+	margin: 0 25px;
+}
+@media all and (min-width: 668px) {
+	.page__wrapper {
+		margin: 0 auto;
+		width: 668px;
+	}
+}
+
+
+
+
+
+.hero {}
+.hero__image {
+	max-width: 333px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.hero__title {
+
+	margin: 0;
+	text-align: center;
+}
