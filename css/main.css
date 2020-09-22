@@ -22,6 +22,9 @@ body {
 		width: 668px;
 	}
 }
+.page__main {
+	height: 100%;
+}
 
 
 
@@ -47,4 +50,16 @@ body {
 
 	margin: 0;
 	text-align: center;
+}
+
+
+
+.footer {
+	background: #F8D74A;
+	padding: 15px 0;
+	text-align: center;
+}
+.footer__sponsor {}
+.footer__sponsor a {
+	color: inherit;
 }

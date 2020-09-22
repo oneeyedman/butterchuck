@@ -21,18 +21,33 @@ function setPageSeoData(data) {
 function writeHero(container, data) {
 	const {title, image} = data;
 
-	const hero = `<section class="section hero">
+	const template = `
+		<section class="section hero">
 			<div class="page__wrapper">
 				<img class="hero__image" src="${image}" alt="${title}">
 				<h1 class="hero__title">${title}</h1>
 			</div>
 		</section>`;
 
-	container.insertAdjacentHTML('beforeend', hero);
+	container.insertAdjacentHTML('beforeend', template);
 }
 
 
 
 
 
-export {setPageSeoData, writeHero};
+function setFooter(container, data) {
+	const {text} = data;
+
+	const template = `
+		<div class="page__wrapper">
+			<p class="footer__sponsor">${text}</p>
+		</div>`;
+	container.insertAdjacentHTML('beforeend', template);
+}
+
+
+
+
+
+export {setPageSeoData, writeHero, setFooter};
